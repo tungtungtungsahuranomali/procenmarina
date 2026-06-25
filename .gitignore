@@ -1,0 +1,8 @@
+*
+*/
+!procentric/
+!procentric/**
+!controlpanel/
+!controlpanel/**
+!.gitignore
+controlpanel/images/video/welcome.mp4

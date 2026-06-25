@@ -1,0 +1,14 @@
+<service>
+    <setup>
+          <versionNumber>1</versionNumber>
+          <modelName>50UM660H4SG</modelName>
+          <priority>NORMAL</priority>
+          <content>
+              <type>SPLASH_IMAGE</type>
+              <data>splash.jpg</data>
+              <frequency>0</frequency>
+              <programNum>0</programNum>
+              <cTag>0</cTag>
+          </content>
+    </setup>
+</service>

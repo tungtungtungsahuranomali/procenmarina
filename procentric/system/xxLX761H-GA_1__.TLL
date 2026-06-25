@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TLLDATA>
+<ModelInfo>
+<ModelName type="0">43LX761H-GA</ModelName>
+<CloneVersion type="1">
+<MajorVersion>100</MajorVersion>
+<MinorVersion>000</MinorVersion>
+<SatelliteDBVersion>400</SatelliteDBVersion>
+</CloneVersion>
+<DTVInfo type="0">DTV_DVB</DTVInfo>
+<BroadcastCountrySetting type="0">IDN</BroadcastCountrySetting>
+<country type="0">AJ</country>
+</ModelInfo>
+<CHANNEL>
+<ATV>
+</ATV>
+<IPTV>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.6.98</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>1</logicalNum>
+<serviceId>30</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.10</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>2</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.11</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>3</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+</IPTV>
+<DTV>
+</DTV>
+</CHANNEL>
+</TLLDATA>

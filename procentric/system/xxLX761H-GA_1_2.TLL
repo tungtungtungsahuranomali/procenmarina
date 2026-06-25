@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TLLDATA>
+<ModelInfo>
+<ModelName type="0">43LX761H-GA</ModelName>
+<CloneVersion type="1">
+<MajorVersion>100</MajorVersion>
+<MinorVersion>000</MinorVersion>
+<SatelliteDBVersion>400</SatelliteDBVersion>
+</CloneVersion>
+<DTVInfo type="0">DTV_DVB</DTVInfo>
+<BroadcastCountrySetting type="0">IDN</BroadcastCountrySetting>
+<country type="0">AJ</country>
+</ModelInfo>
+<UiRegistry>
+<commercial>
+<commercialFlag type="0">0</commercialFlag>
+<procentricMode type="0">3</procentricMode>
+<tuneIPAddr_a type="0">228</tuneIPAddr_a>
+<tuneIPAddr_b type="0">110</tuneIPAddr_b>
+<tuneIPAddr_c type="0">6</tuneIPAddr_c>
+<tuneIPAddr_d type="0">98</tuneIPAddr_d>
+<tunePort type="0">1234</tunePort>
+<tuneProgram type="0">0</tuneProgram>
+<tunePcrPid type="0">0</tunePcrPid>
+<tuneVideoPid type="0">255</tuneVideoPid>
+<tuneAudioPid type="0">0</tuneAudioPid>
+<tuneVideoType type="0">0</tuneVideoType>
+<tuneAudioType type="0">0</tuneAudioType>
+<tuneIpType type="0">0</tuneIpType>
+</commercial>
+</UiRegistry>
+<CHANNEL>
+<ATV>
+</ATV>
+<IPTV>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.6.98</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>1</logicalNum>
+<serviceId>30</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.10</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>2</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.11</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>3</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.6</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>4</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.8</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>5</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.4.8</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>6</logicalNum>
+<serviceId>0</serviceId>
+<hidden>0</hidden>
+</ITEM>
+</IPTV>
+<DTV>
+</DTV>
+</CHANNEL>
+</TLLDATA>

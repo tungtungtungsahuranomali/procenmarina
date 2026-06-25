@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TLLDATA>
+<ModelInfo>
+<ModelName type="0">43LX761H-GA</ModelName>
+<CloneVersion type="1">
+<MajorVersion>100</MajorVersion>
+<MinorVersion>000</MinorVersion>
+<SatelliteDBVersion>400</SatelliteDBVersion>
+</CloneVersion>
+<DTVInfo type="0">DTV_DVB</DTVInfo>
+<BroadcastCountrySetting type="0">IDN</BroadcastCountrySetting>
+<country type="0">AJ</country>
+</ModelInfo>
+<CHANNEL>
+<ATV>
+</ATV>
+<IPTV>
+<ITEM>
+<prNum>200</prNum>
+<minorNum>0</minorNum>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.6.98</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>1</logicalNum>
+<serviceId>233</serviceId>
+<hexVchName>30312e20426c6f6f6d62657267</hexVchName>
+<notConvertedLengthOfVchName>13</notConvertedLengthOfVchName>
+<vchName>01. Bloomberg</vchName>
+<lengthOfVchName>13</lengthOfVchName>
+<hidden>0</hidden>
+</ITEM>
+<ITEM>
+<prNum>201</prNum>
+<minorNum>0</minorNum>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.10</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>2</logicalNum>
+<serviceId>234</serviceId>
+<hexVchName>30322e2054565249</hexVchName>
+<notConvertedLengthOfVchName>8</notConvertedLengthOfVchName>
+<vchName>02. TVRI</vchName>
+<lengthOfVchName>8</lengthOfVchName>
+<hidden>0</hidden>
+</ITEM> 		
+<ITEM>
+<prNum>202</prNum>
+<minorNum>0</minorNum>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.11</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>3</logicalNum>
+<serviceId>235</serviceId>
+<hexVchName>30332e204d4554524f205456</hexVchName>
+<notConvertedLengthOfVchName>12</notConvertedLengthOfVchName>
+<vchName>03. METRO TV</vchName>
+<lengthOfVchName>12</lengthOfVchName>
+<hidden>1</hidden>
+</ITEM>
+<ITEM>
+<prNum>203</prNum>
+<minorNum>0</minorNum>
+<source_address>0.0.0.0</source_address>
+<multicast_address>228.110.3.12</multicast_address>
+<port>1234</port>
+<protocol>0</protocol>
+<logicalNum>4</logicalNum>
+<serviceId>236</serviceId>
+<hexVchName>30342e2052435449</hexVchName>
+<notConvertedLengthOfVchName>8</notConvertedLengthOfVchName>
+<vchName>04. RCTI</vchName>
+<lengthOfVchName>8</lengthOfVchName>
+<hidden>0</hidden>
+</ITEM>
+</IPTV>
+<DTV>
+</DTV>
+</CHANNEL>
+</TLLDATA>
