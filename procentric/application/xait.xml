@@ -1,5 +1,5 @@
 <XAIT>
-	<versionNumber>110</versionNumber>
+	<versionNumber>120</versionNumber>
 	<AbstractService>
 		<svcName>Pro:Centric Application</svcName>
 		<svcId>0x1208</svcId>
@@ -16,13 +16,13 @@
 					<controlCode>AUTOSTART</controlCode>
 					<visibility>NOT_VISIBLE_USERS</visibility>
 					<priority>1</priority>
-					<version>110</version>
+					<version>120</version>
 				</applicationDescriptor>
 				<HcapDescriptor>
 					<frequency>1</frequency>
 					<programNum>8</programNum>
 					<cTag>8</cTag>
-					<url>http://192.168.220.3/procentric/application/HRBW_0.8.zip</url>
+					<url>http://192.168.220.3/procentric/application/HRBW_0.17.zip</url>
 					<applicationStructure>
 						<baseDirectory>/</baseDirectory>
 						<classpathExtension>/</classpathExtension>

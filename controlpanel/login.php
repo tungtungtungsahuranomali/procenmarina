@@ -90,7 +90,7 @@
 
 
       <form method="POST" action="loginengine.php">
-        <img class="mb-4" src="images/hotel_logo.png" alt="" width="300" height="151">
+        <img class="mb-4" src="images/hotel_logo.png" alt="" style="width:150px">
         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
         <div class="form-floating">
