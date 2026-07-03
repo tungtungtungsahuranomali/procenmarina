@@ -2,6 +2,9 @@
 
 include 'koneksi.php';
 
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$hostUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
+
 session_start();
 
 $usersession = $_SESSION['username'];
@@ -134,9 +137,16 @@ if(isset($_POST['submit'])){
         </div>
         <div class="mb-3">
           <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-          <a class="btn btn-success" href="http://192.168.60.4/controlpanel/previews/welcomepreview.php" target="_blank">Preview</a>
+          <a class="btn btn-success" href="<?=$hostUrl?>/controlpanel/previews/welcomepreview.php" target="_blank">Preview</a>
         </div>
       </form>
+        <!-- Video Preview -->
+        <div class="mt-4">
+            <h4>Current Welcome Video</h4>
+            <video src="<?=$hostUrl?>/controlpanel/images/video/welcome.mp4" style="width:100%;max-width:640px;border-radius:8px" controls preload="metadata">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 		  </div>
       <?php  
   }else{
