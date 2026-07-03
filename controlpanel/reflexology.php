@@ -129,7 +129,7 @@ $connectdatareflexology = mysqli_query($koneksi, $datareflexology);
                       <td class="pl-0"><?php echo $judulgambar; ?></td>
                       <td>
                         <a class="edit btn" href="deletereflexology.php?idreflexology=<?php echo $idreflexology; ?>" style="background-color: red; color: white; font-weight: bolder;">Delete</a>
-                        <a class= "btn btn-success" target="_blank" href="<?php echo $linkgambar; ?>">Preview</a>
+                        <img src="<?=$linkgambar?>" style="max-height:60px;border-radius:4px">
                       </td>
                     </tr>
                 <?php 

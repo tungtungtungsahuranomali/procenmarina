@@ -156,7 +156,7 @@ $sessionlevel = $_SESSION['level'];
             $idemergency = $dataemergency['id_information'];
             $judulemergency = $dataemergency['judul'];
             $deskripsiemergency = $dataemergency['deskripsi'];
-            //$gambaremergency = $dataemergency['gambar_about'];
+            $gambaremergency = $dataemergency['gambar_about'];
             $kategoriemergency = $dataemergency['kategori'];
             ?>
 
@@ -170,6 +170,12 @@ $sessionlevel = $_SESSION['level'];
           <div style="font-weight: bolder;color: black;">Deskripsi</div>
           <div><?php echo  $deskripsiemergency; ?></div>
         </div>
+        <?php if(!empty($gambaremergency)){ ?>
+        <div style="display: flex; flex-direction: column;">
+          <div style="font-weight: bolder; color: black;">Gambar</div>
+          <div><img src="<?=$gambaremergency?>" style="max-height:100px;border-radius:4px"></div>
+        </div>
+        <?php } ?>
 
         <?php
           }
@@ -225,7 +231,7 @@ $sessionlevel = $_SESSION['level'];
             $idcsr = $datacsr['id_information'];
             $judulcsr = $datacsr['judul'];
             $deskripsicsr = $datacsr['deskripsi'];
-            //$gambarcsr = $dataaboutharris['gambar_about'];
+            $gambarcsr = $dataaboutharris['gambar_about'];
             $kategoricsr = $datacsr['kategori'];
             ?>
 
@@ -238,6 +244,12 @@ $sessionlevel = $_SESSION['level'];
           <div style="font-weight: bolder; color: black;">Deskripsi</div>
           <div><?php echo  $deskripsicsr; ?></div>
         </div>
+        <?php if(!empty($gambarcsr)){ ?>
+        <div style="display: flex; flex-direction: column;">
+          <div style="font-weight: bolder; color: black;">Gambar</div>
+          <div><img src="<?=$gambarcsr?>" style="max-height:100px;border-radius:4px"></div>
+        </div>
+        <?php } ?>
 
         <?php
           }
@@ -303,7 +315,7 @@ $sessionlevel = $_SESSION['level'];
             $iddestination = $datadestination['id_information'];
             $juduldestination = $datadestination['judul'];
             $deskripsidestination = $datadestination['deskripsi'];
-            //$gambardestination = $dataaboutharris['gambar_about'];
+            $gambardestination = $dataaboutharris['gambar_about'];
             $kategoridestinatin = $datadestination['kategori'];
             ?>
 
@@ -316,6 +328,12 @@ $sessionlevel = $_SESSION['level'];
           <div style="font-weight: bolder; color: black;">Deskripsi</div>
           <div><?php echo  $deskripsidestination; ?></div>
         </div>
+        <?php if(!empty($gambardestination)){ ?>
+        <div style="display: flex; flex-direction: column;">
+          <div style="font-weight: bolder; color: black;">Gambar</div>
+          <div><img src="<?=$gambardestination?>" style="max-height:100px;border-radius:4px"></div>
+        </div>
+        <?php } ?>
 
         <?php
           }

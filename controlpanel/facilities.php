@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
   $storage = $_FILES['gambar']['tmp_name'];
   $kategori = $_POST['kategori'];
 
-  $insert = "INSERT INTO fasilitas set gambar = 'http://192.168.220.3/controlpanel/images/picfasilitas/$gambar', kategori = '$kategori'";
+  $insert = "INSERT INTO fasilitas set gambar = '$hostUrl/controlpanel/images/picfasilitas/$gambar', kategori = '$kategori'";
 
   $connectinsert = mysqli_query($koneksi, $insert);
     if(move_uploaded_file($storage, "./images/picfasilitas/".$gambar)){
@@ -181,7 +181,7 @@ if(isset($_POST['submit'])){
                     ?>
 
                     <tr scope="row">                      
-                      <td class="pl-0"><?php echo $urlgambar; ?></td>
+                      <td class="pl-0"><img src="<?=$urlgambar?>" style="max-height:60px;border-radius:4px"></td>
                       <td class="pl-0"><?php echo $kategorifasilitas; ?></td>
                       <td>
                         <a class="edit btn" href="deletefasilitas.php?idfasilitas=<?php echo $idfasilitas; ?>" style="background-color: red; color: white; font-weight: bolder;">Delete</a>

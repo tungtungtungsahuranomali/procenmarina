@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
   $gambar = $_FILES['gambar']['name'];
   $storage = $_FILES['gambar']['tmp_name'];
 
-  $insert = "INSERT INTO service set link_gambar = 'http://192.168.30.4/controlpanel/images/picservices/$gambar'";
+  $insert = "INSERT INTO service set link_gambar = '$hostUrl/controlpanel/images/picservices/$gambar'";
   $connectinsert = mysqli_query($koneksi, $insert);
   if(!empty($gambar)){
     if(move_uploaded_file($storage, "./images/picservices/".$gambar)){
@@ -157,7 +157,7 @@ if(isset($_POST['submit'])){
 
                     <tr scope="row">
                       <td><?php echo $idservice; ?></td>
-                      <td class="pl-0"><?php echo $judulgambar; ?></td>
+                      <td class="pl-0"><img src="<?=$judulgambar?>" style="max-height:60px;border-radius:4px"></td>
                       <td>
                         <a class="edit btn" href="deleteservice.php?idservice=<?php echo $idservice; ?>" style="background-color: red; color: white; font-weight: bolder;">Delete</a>
                       </td>
