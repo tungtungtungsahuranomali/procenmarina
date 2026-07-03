@@ -37,6 +37,16 @@ if(isset($_POST['submit'])){
 }
 
 
+// update video welcome
+$uploadSuccess = false;
+if(isset($_POST['submit_video'])){
+    if(!empty($_FILES['video']['name'])){
+        if(move_uploaded_file($_FILES['video']['tmp_name'], "./images/video/welcome.mp4")){
+            $uploadSuccess = true;
+        }
+    }
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -143,11 +153,64 @@ if(isset($_POST['submit'])){
         <!-- Video Preview -->
         <div class="mt-4">
             <h4>Current Welcome Video</h4>
-            <video src="<?=$hostUrl?>/controlpanel/images/video/welcome.mp4" style="width:100%;max-width:640px;border-radius:8px" controls preload="metadata">
+            <video id="welcomeVideo" src="<?=$hostUrl?>/controlpanel/images/video/welcome.mp4" style="width:100%;max-width:640px;border-radius:8px" controls preload="metadata">
                 Your browser does not support the video tag.
             </video>
         </div>
+
+        <!-- Upload Video -->
+        <div class="mt-4 pt-3 border-top">
+            <h4>Upload Welcome Video</h4>
+            <form id="videoForm" enctype="multipart/form-data">
+                <div class="mb-3 w-75">
+                    <input class="form-control" type="file" name="video" accept="video/mp4">
+                </div>
+                <div class="progress mb-3" id="progWrap" style="display:none;height:24px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" id="progBar" role="progressbar" style="width:0%">0%</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Video</button>
+            </form>
+            <div id="videoToast" style="position:fixed;top:20px;right:20px;z-index:9999"></div>
+        </div>
 		  </div>
+
+<script>
+$('#videoForm').submit(function(e){
+    e.preventDefault();
+    var fd = new FormData(this);
+    fd.append('submit_video', '1');
+    $.ajax({
+        url: '',
+        type: 'POST',
+        data: fd,
+        contentType: false,
+        processData: false,
+        xhr: function(){
+            var xhr = new XMLHttpRequest();
+            xhr.upload.addEventListener('progress', function(e){
+                if(e.lengthComputable){
+                    var p = Math.round(e.loaded / e.total * 100);
+                    $('#progWrap').show();
+                    $('#progBar').css('width', p + '%').text(p + '%');
+                }
+            });
+            return xhr;
+        },
+        success: function(){
+            var v = document.getElementById('welcomeVideo');
+            v.src = v.src.split('?')[0] + '?t=' + Date.now();
+            v.load();
+            var t = '<div class="alert alert-success alert-dismissible fade show" role="alert">'
+                  + 'Video uploaded! <button type="button" class="close" data-dismiss="alert">&times;</button></div>';
+            $('#videoToast').html(t).fadeIn();
+            setTimeout(function(){ $('.alert').alert('close'); }, 4000);
+            $('#progWrap').hide();
+            $('#progBar').css('width', '0%').text('0%');
+            this.reset();
+        }
+    });
+});
+</script>
       <?php  
   }else{
 
