@@ -5,4 +5,5 @@
 !controlpanel/
 !controlpanel/**
 !.gitignore
+controlpanel/images/welcome.png
 controlpanel/images/video/welcome.mp4
